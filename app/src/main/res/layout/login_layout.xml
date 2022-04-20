@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="@dimen/_300sdp"
+    android:id="@+id/loginLayout"
+    android:layout_centerInParent="true"
+    android:elevation="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_2sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:padding="@dimen/_22sdp"
+        android:layoutDirection="ltr"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_300sdp">
+
+        <TextView
+            android:id="@+id/userText"
+            android:text="نام کاربری:"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/highBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/userEditText"
+            android:maxLines="1"
+            android:inputType="number"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toLeftOf="@+id/userText"
+            android:layout_alignBottom="@+id/userText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/secondText"
+            android:text="ثانیه:"
+            android:gravity="bottom"
+            android:layout_below="@+id/userText"
+            android:textSize="@dimen/_16ssp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:textColor="@color/highBlue"
+            android:layout_alignRight="@+id/userText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:id="@+id/secondEditText"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toLeftOf="@+id/secondText"
+            android:maxLines="1"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_alignBottom="@+id/secondText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <Button
+            android:id="@+id/selectAlarm"
+            android:text="آلارم:"
+            android:layout_below="@+id/secondText"
+            android:textSize="@dimen/_11ssp"
+            android:clickable="true"
+            android:background="@color/highBlue"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_alignRight="@+id/userText"
+            android:textColor="@color/white"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="wrap_content"
+            android:focusable="true" />
+
+
+        <TextView
+            android:id="@+id/alarmAddress"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toLeftOf="@+id/selectAlarm"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/selectAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_toRightOf="@+id/selectAlarm"
+            android:layout_below="@+id/alarmAddress"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="@color/gray500"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_alignParentRight="true"
+            app:cornerRadius="@dimen/_3sdp"
+            android:elevation="@dimen/_5sdp"
+            android:background="@color/purple_500"
+            android:text="ذخیره"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:padding="@dimen/_2sdp"
+            android:textSize="@dimen/_12ssp"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_height="@dimen/_40sdp"/>
+
+        <Button
+            android:id="@+id/cancel"
+            app:cornerRadius="@dimen/_3sdp"
+            android:layout_alignParentLeft="true"
+            android:elevation="@dimen/_5sdp"
+            android:background="@color/purple_500"
+            android:text="لغو"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:padding="@dimen/_2sdp"
+            android:textSize="@dimen/_12ssp"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_height="@dimen/_40sdp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

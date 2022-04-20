@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        layout="@layout/toolbar"
+         android:id="@+id/toolbar"/>
+    <RelativeLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_above="@+id/view"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/shape_edt_comment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+           <RelativeLayout
+               android:layout_marginBottom="@dimen/_10sdp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:id="@+id/txt1"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentRight="true"
+                   android:text="وضعیت اتصال:"
+                   android:textSize="@dimen/_15ssp"
+                   android:textColor="@color/black"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+               <TextView
+                   android:id="@+id/connectionSituation"
+                   android:layout_centerVertical="true"
+                   android:layout_toLeftOf="@+id/txt1"
+                   android:text="غیرفعال"
+                   android:textSize="@dimen/_15ssp"
+                   android:maxLines="1"
+                   android:gravity="center"
+                   android:textColor="@color/red"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+           </RelativeLayout>
+           <RelativeLayout
+               android:layout_marginBottom="@dimen/_10sdp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:id="@+id/txt2"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentRight="true"
+                   android:text="نام کاربری:"
+                   android:textSize="@dimen/_15ssp"
+                   android:textColor="@color/black"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+               <TextView
+                   android:id="@+id/userName"
+                   android:layout_centerVertical="true"
+                   android:layout_toLeftOf="@+id/txt2"
+                   tools:text="2851"
+                   android:textSize="@dimen/_15ssp"
+                   android:maxLines="1"
+                   android:gravity="center"
+                   android:textColor="@color/highBlue"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+           </RelativeLayout>
+           <RelativeLayout
+               android:layout_marginBottom="@dimen/_10sdp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:id="@+id/txt3"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentRight="true"
+                   android:text="ساعت اتصال:"
+                   android:textSize="@dimen/_15ssp"
+                   android:textColor="@color/black"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+               <TextView
+                   android:id="@+id/connectionTime"
+                   android:layout_centerVertical="true"
+                   android:layout_toLeftOf="@+id/txt3"
+                   tools:text="11:45:23"
+                   android:inputType="time"
+                   android:textSize="@dimen/_15ssp"
+                   android:maxLines="1"
+                   android:gravity="center"
+                   android:textColor="@color/highBlue"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+           </RelativeLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/view"
+            android:background="@drawable/shape_edt_comment"
+            android:padding="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/white"
+                android:text="ورود"
+                android:elevation="@dimen/_4sdp"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/_35ssp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@color/highBlue"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_80sdp"/>
+
+
+            <Button
+                android:id="@+id/stopBtn"
+                android:layout_below="@id/loginBtn"
+                android:textColor="@color/white"
+                android:text="توقف"
+                android:elevation="@dimen/_4sdp"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/_35ssp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@color/highBlue"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_80sdp"/>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
